@@ -33,10 +33,9 @@ class MainActivity : AppCompatActivity() {
             "isStudent" to true
         )
 
-        val studentsRef: CollectionReference =
+        val studentsRef: DocumentReference =
             db.collection("users")
                 .document("students")
-                .collection("isMajor")
 
 
 
